@@ -6,61 +6,105 @@
         </title>
         <style>
             strong {
-                background-color: red;
+                background-color:red;
             }
 
             img {
-                height: 200px;
-                width: auto;
+                height:200px;
+                width:auto;
+            }
+            #main{
+                display:flex;
+                width:846px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            #Personal {
+                display:flex;
+                width: 270px;
+                text-align: center;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+            }
+            #contact {
+                width: 270px;
+                text-align: center;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+            }
+            #assignment {
+                width: 270px;
+                text-align:center;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+            }
+            .bold{
+                font-weight:bold;
+            }
+            #classes{
+                text-align:center;
             }
         </style>
     </head>
     <body>
-    <h1>
-        Landon White
-    </h1>
-    <p>
-        Email:
-        <a href="ljwhite@usc.edu">ljwhite@usc.edu</a>
-    </p>
-    <p>
-        Favorite color:
-        <strong>Red</strong>
-    </p>
-    <p>
-        Favorite Website:<a href="https://webreg.usc.edu/Login" target="_blank">USC Web Reg</a>
-    </p>
-    <p>
-        Favorite Activity: Coding
-    </p>
-    <img src="Lab_2_Image.jpg" alt="Reading Illustration">
-    <p>List of Current Courses</p>
-    <ul>
-        <li>
-            Ethical Hacking
-        </li>
-        <li>
-            Intro to Web Dev.
-        </li>
-        <li>
-            Managing Data in C++
-        </li>
-        <li>
-            Asian Security Issues
-        </li>
-        <li>
-            National Intelligence and The Shaping of Policy
-        </li>
-    </ul>
-    <p>List of Completed Assignments</p>
-    <ul>
-        <li><a href="file:///C:/Users/Student/Documents/GitHub/itp104-submissions-LandonW25/assignment_01/a1.html" target="_blank">Assignment 1</a></li>
-        <li><a href="file:///C:/Users/Student/Documents/GitHub/itp104-submissions-LandonW25/assignment_02/a2.html" target="_blank">Assignment 2</a></li>
-    </ul>
-    <p>List of Completed Labs</p>
-    <ul>
-        <li><a href="file:///C:/Users/Student/Downloads/index.html" target="_blank">Lab 2</a></li>
-        <li><a href="file:///C:/Users/Student/Documents/GitHub/itp104-submissions-LandonW25/lab_03/assignment_01/a1.html" target="_blank">Lab 3</a></li>
-    </ul>
+        <div id="main">
+            <div id="Personal">
+                <div id="favourites">
+                <p>
+                    Favorite color:
+                    <strong>Red</strong>
+                </p>
+                <p>
+                    Favorite Website:<a href="https://webreg.usc.edu/Login" target="_blank">USC Web Reg</a>
+                </p>
+                <p>
+                    Favorite Activity: Web Development
+                </p>
+                </div>
+                <!--<p>List of Current Courses</p>-->
+                <div id="classes">
+                <p class="bold">List of Current Courses</p>
+                <ul>
+                    <li>
+                        Ethical Hacking
+                    </li>
+                    <li>
+                        Intro to Web Dev.
+                    </li>
+                    <li>
+                        Cyber Law and Privacy
+                    </li>
+                    <li>
+                        Asian Security Issues
+                    </li>
+                    <li>
+                        National Intelligence and The Shaping of Policy
+                    </li>
+                </ul>
+                </div><!--classes-->
+            </div><!--personal info-->
+            <div id="contact">
+            <h1>
+                Landon White
+            </h1>
+            <p>
+                Email:
+                <a href="ljwhite@usc.edu">ljwhite@usc.edu</a>
+            </p>
+            <!--<img id="image "src="web_dev.jpg" alt="web development" />-->
+            </div><!--contact info-->
+            <div id="assignment">
+            <p>List of Completed Assignments</p>
+            <ul>
+                <li><a href="file:///C:/Users/Student/Documents/GitHub/itp104-submissions-LandonW25/assignment_01/a1.html" target="_blank">Assignment 1</a></li>
+                <li><a href="file:///C:/Users/Student/Documents/GitHub/itp104-submissions-LandonW25/assignment_02/a2.html" target="_blank">Assignment 2</a></li>
+            </ul>
+            <p>List of Completed Labs</p>
+            <ul>
+                <li><a href="file:///C:/Users/Student/Downloads/index.html" target="_blank">Lab 2</a></li>
+                <li><a href="file:///C:/Users/Student/Documents/GitHub/itp104-submissions-LandonW25/lab_03/assignment_01/a1.html" target="_blank">Lab 3</a></li>
+            </ul>
+            </div><!--assignment list-->
+        </div><!--main-->
     </body>
 </html>
