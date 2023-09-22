@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Textbook Order Form</h1>
+    <form action="lab_05_confirmation.html">
+        <div class='form-row'>
+            <div class="left-col">
+                <label for="name">Name of Textbook:</label> <input type="text" id="name" placeholder="Name" />
+            </div>
+        </div>
+        <div class='form-row'>
+            <div class="left-col">
+                <label for="email-id">Email</label>: <input type="email" id="email-id" placeholder="abc123@usc.edu" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="left-col">
+                <label for="address">Current Address:</label>: <input type="text" id="address" placeholder="0000 xyz St, Los Angeles, CA, 90007" />
+            </div>
+        </div>
+        <div class="form-row">
+            Would you like Hardcover, Paperback, or Electronic?
+            <label>
+                <input type="radio" name="type" />
+                Hardcover
+            </label>
+            <label>
+                <input type="radio" name="type" />
+                Paperback
+            </label>
+            <label>
+                <input type="radio" name="type" />
+                Electronic
+            </label>
+        </div>
+        <div class="form-row">
+            Add-Ons:
+            <label>
+                <input type="checkbox" />
+                Teacher's Guide
+            </label>
+            <label>
+                <input type="checkbox" />
+                Problem Set Accompaniment
+            </label>
+            <label>
+                <input type="checkbox" />
+                Notebook
+            </label>
+        </div>
+        <div class="form-row">
+            <label for="subject-id">Subject:</label>
+            <select id="subject-id">
+                <option>Support(submit phone number)</option>
+                <option>Logistical Issues</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="msg-id"></label>
+            Message:
+            <textarea id="msg-id" placeholder="hello">
+			
+		</textarea>
+        </div>
+        <div class="form-row">
+            Do you agree to <a href="sample-terms-conditions-agreement.pdf" target="_blank">Terms and Conditions?</a>
+            <label for="t/c">Yes</label> <input type="checkbox" id="t/c" />
+        </div>
+        <div class='form-row'>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</body>
+</html>

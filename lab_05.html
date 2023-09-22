@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Textbook Form Page</title>
+    <style>
+        .form-row{
+            margin: 10px 0px;
+            display:flex;
+        }
+        .left-col{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Textbook Order Form</h1>
+    <p>hello</p>
+    <form action="confirmation.html">
+        <div class='form-row'>  
+            <!--label necessary for accessability-->
+            <div class="left-col">
+                <label for="name-id">Name:</label> <input type="text" id="name-id" placeholder="First Last" />
+            </div>
+        </div>
+        <div class='form-row'>
+            <div class="left-col">
+                <label for="email-id">Email</label>: <input type="email" id="email-id" placeholder="abc123@usc.edu" />
+            </div>
+        </div>
+        <div class="form-row">
+            Are you a current student?
+            <label>
+                <!--name makes buttons a part of a single group and thus provides mutual exclusivity-->
+                <input type="radio" name="student" />
+                Yes
+            </label>
+            <label>
+                <input type="radio" name="student" />
+                No
+            </label>
+        </div>
+        <div class="form-row">
+            Subscribe:
+            <label>
+                <input type="checkbox" />
+                Newsletters
+            </label>
+            <label>
+                <input type="checkbox" />
+                Events
+            </label>
+            <label>
+                <input type="checkbox" />
+                Marketing
+            </label>
+        </div>
+        <div class="form-row">
+            <label for="subject-id">Subject:</label>
+            <select id="subject-id">
+                <option>General Questions</option>
+                <option>Declaring a Minor</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="msg-id"></label>
+            Message:
+            <textarea id="msg-id" placeholder="hello">
+			
+		</textarea>
+        </div>
+        <div class='form-row'>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</body>
+</html>
