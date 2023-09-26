@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>April 2023 Calendar</title>
+    <style>
+        #header{
+            background-image:url("img/palm_springs.jpg");
+            height:250px;
+            width:998px;
+            background-position:center;
+            background-size:cover;
+            margin-left:auto;
+            margin-right:auto;
+            text-align:center;
+            line-height:200px;
+            font-size:1.5em;
+            color:antiquewhite;
+            border-top:1px solid black;
+            border-right:1px solid black;
+            border-left:1px solid black;
+        }
+        #main {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:white;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th{
+            /*
+                width main: 1000px
+                # of cells: 7
+                2 outside borders, 6 inside, 8 total
+                width of borders = 1px
+                1000-8-992. 992/7=141.xxxx = 141
+            */
+            border:1px solid black;
+            width:142px;
+        }
+        
+        td {
+            border: 1px solid black;
+            /*text-align: center;*/
+            width: 142px;
+            /*padding: 1px 1px 70px 110px;*/
+            height:142px;
+        }
+        .bday {
+            width: 142px;
+            /*padding-top: 20px;*/
+            text-align: center;
+            /*margin: 10px;*/
+            /*border: 1px solid red;*/
+            background-image:url("img/birthday.jpg");
+            background-position:center;
+            background-size:cover;
+        }
+        .grey{
+            color:grey;
+        }
+        .top_right{
+            vertical-align:top;
+            margin-left:110px;
+            text-align:right;
+            border: 1px solid blue;
+        }
+        .sixteen{
+            color:black;
+        }
+        body{
+            background-color:grey;
+        }
+        .earth{
+            background-image: url("img/earth.jpg");
+            background-position: center;
+            background-size: cover;
+            width:142px;
+              
+            color:white;
+        }
+        .earth_text{
+            text-align:center;
+        }
+        .laugh {
+            background-image: url("img/emoji.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fc0303;
+        }
+        .joke_text{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+       <h1>April 2023</h1>
+    </div>
+    <div id="main">
+    <table>
+        <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+        </tr>
+        <tr>
+            <td class="grey top_right">26</td>
+            <td class="grey top_right">27</td>
+            <td class="grey top_right">28</td>
+            <td class="grey top_right">29</td>
+            <td class="grey top_right">30</td>
+            <td class="grey top_right">31</td>
+            <td class="top_right laugh">
+                1
+                <div class="joke_text">April Fools</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="top_right">2</td>
+            <td class="top_right">3</td>
+            <td class="top_right">4</td>
+            <td class="top_right">5</td>
+            <td class="top_right">6</td>
+            <td class="top_right">7</td>
+            <td class="top_right">8</td>
+        </tr>
+        <tr>
+            <td class="top_right">9</td>
+            <td class="top_right">10</td>
+            <td class="top_right">11</td>
+            <td class="top_right">12</td>
+            <td class="top_right">13</td>
+            <td class="top_right">14</td>
+            <td class="top_right">15</td>
+        </tr>
+        <tr>
+            <td class="top_right bday sixteen">
+                16
+                <div class="bday"> My 20th Birthday</div>
+            </td>
+            <!--div class="top_right">16<div id="birthday">Birthday</div></div>-->
+            <!--<td><div class="top_right>">16</div><div>Birthday</div></td>-->
+            <td class="top_right">17</td>
+            <td class="top_right">18</td>
+            <td class="top_right">19</td>
+            <td class="top_right">20</td>
+            <td class="top_right">21</td>
+            <td class="top_right earth">
+                22
+                <div class="earth_text">Earth Day</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="top_right">23</td>
+            <td class="top_right">24</td>
+            <td class="top_right">25</td>
+            <td class="top_right">26</td>
+            <td class="top_right">27</td>
+            <td class="top_right">28</td>
+            <td class="top_right">29</td>
+        </tr>
+        <tr>
+            <td class="top_right">30</td>
+            <td class="grey top_right">1</td>
+            <td class="grey top_right">2</td>
+            <td class="grey top_right">3</td>
+            <td class="grey top_right">4</td>
+            <td class="grey top_right">5</td>
+            <td class="grey top_right">6</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
