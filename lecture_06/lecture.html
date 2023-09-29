@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Minor | ITP</title>
+	
+	<link rel="stylesheet" href="main.css">
+	
+	<style>
+		
+		
+
+		/* Program Overview */
+		#usc-logo{
+			width: 200px;
+			height: auto;
+			float: right;
+			margin-left: 15px;
+			margin-bottom: 15px;
+		}
+
+		/* Image Gallery */
+		#gallery {
+			display: flex;
+			align-items: flex-start;
+		}
+		.thumbnail {
+			width: 140px;
+			height: auto;
+			margin: 5px;
+			opacity: 0.7; 
+			/*
+				0.7 = 70% opaque
+				30% transparent
+			*/
+		}
+
+		.thumbnail:hover {
+			opacity: 1.0;
+		}
+
+		.img-container > p {
+			text-align: center;
+			/* display: none; */
+			visibility: hidden;
+		}
+
+		/* .thumbnail + p:hover {} */
+
+		.thumbnail:hover + p {
+			/* display: block; */
+			visibility: visible;
+		}
+
+		/* Course Plan */
+		th {
+			border: 1px solid #CCC;
+			border-bottom: 3px solid #CCC;
+			padding: 10px 0px;
+			width: 148.75px;
+		}
+		td {
+			border: 1px solid #CCC;
+			padding: 10px 0px;
+			width: 148.75px;
+		}
+		table {
+			border-collapse: collapse;
+			text-align: center;
+		}
+
+		/* Contact Form */
+		.form-row {
+			margin: 10px 0px;
+			display: flex;
+		}
+		.form-col {
+			width: 200px;
+		}
+		button {
+			padding: 10px 20px;
+			margin: 5px;
+		}
+		#submit-btn {
+			background-color: #900;
+			color: #FFF;
+		}
+
+		
+
+		/* p:hover {
+			background-color: #FF0;
+		} */
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		<h1>ITP Web Development</h1>
+	</div> <!-- #header -->
+
+	<div id="navbar">
+		<a id="highlight-nav" href="lecture.html#overview-section">Home</a>
+		<a href="lecture.html#images-section">Gallery</a>
+		<a href="">Course Plan</a>
+		<a href="">Contact</a>
+	</div>
+
+	<div id="main">
+		<h2 id="overview-section">Program Overview</h2>
+
+		<img src="img/usc_logo.png" alt="USC Logo" id="usc-logo">
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et porta odio, vel condimentum sem. Nunc facilisis diam et neque fringilla, ac efficitur lectus sodales. Morbi cursus ac eros vitae condimentum. Duis laoreet maximus ligula non cursus. Nunc ultrices consectetur leo a dapibus. Etiam placerat, elit a vulputate tincidunt, nisi dui iaculis neque, ac gravida mi libero eget diam. Sed risus diam, ultricies ut scelerisque a, dignissim in lacus. Sed vestibulum lorem id pulvinar egestas. Curabitur tincidunt neque nibh, eu eleifend nisi pellentesque sed. Ut eu quam nec metus eleifend hendrerit ut eget purus. Suspendisse vitae neque varius, molestie felis eu, maximus sapien. Etiam tempus risus diam, eu efficitur nisl varius at.</p>
+
+		<p>Phasellus non porttitor sem. Duis eu lectus vitae ipsum finibus tempus sit amet vel lorem. Aenean sodales finibus augue et laoreet. Praesent hendrerit sem orci, lacinia sodales magna gravida ac. Aenean suscipit, augue eu tincidunt posuere, nulla tortor egestas ipsum, eu finibus velit quam vel sem. Pellentesque leo libero, placerat vel ultrices nec, hendrerit et velit. Vestibulum fermentum pulvinar augue, in consequat eros facilisis vel. Aenean convallis nisl et quam tincidunt, eu sodales metus faucibus. Praesent ac ante et neque mattis commodo. Aenean tristique nunc eget posuere fringilla.</p>
+
+		<h2 id="images-section">Image Gallery</h2>
+
+		<div id="gallery">
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/img_1.jpg" alt="USC Village">
+				<p>USC Village</p>
+			</div>
+			
+			<div class="img-container">
+				<img class="thumbnail" src="img/img_2.jpg" alt="Tommy Trojan">
+				<p>Tommy Trojan</p>
+			</div>
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/img_3.jpg" alt="VKC">
+				<p>VKC</p>
+			</div>
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/img_4.jpg" alt="Fountain">
+				<p>Fountain</p>
+			</div>
+
+
+		</div> <!-- #gallery -->
+
+		<h2 id="plan-section">Course Plan</h2>
+
+		<h3>Minor in 4 Semesters</h3>
+
+		<table>
+			<tr>
+				<th>1st Semester</th>
+				<th>2nd Semester</th>
+				<th>3rd Semester</th>
+				<th>4th Semester</th>
+			</tr>
+			<tr>
+				<td>ITP 104</td>
+				<td>ITP 301</td>
+				<td>ITP 304</td>
+				<td>ITP 460</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>ITP 302*</td>
+				<td>ITP 404*</td>
+				<td></td>
+			</tr>
+		</table>
+
+		<p><em>*Elective</em></p>
+
+		<h2 id="contact-section">Contact</h2>
+
+		<p>For questions, email <a href="mailto:itp@usc.edu">itp@usc.edu</a>.</p>
+
+		<form action="confirmation.html">
+
+			<div class="form-row">
+				<div class="form-col">
+					<label for="name-id">Name:</label>
+				</div>
+				<input id="name-id" type="text" placeholder="Tommy Trojan">
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<div class="form-col">
+					<label for="email-id">Email:</label>
+				</div>
+				<input id="email-id" type="email" placeholder="ttrojan@usc.edu">
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<div class="form-col">Are you a current student?</div>
+
+				<label>
+					<input type="radio" name="current-student">
+					Yes
+				</label>
+
+				<label>
+					<input type="radio" name="current-student">
+					No
+				</label>
+
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<div class="form-col">Subscribe:</div>
+
+				<label>
+					<input type="checkbox">
+					Newsletters
+				</label>
+
+				<label>
+					<input type="checkbox">
+					Events
+				</label>
+
+				<label>
+					<input type="checkbox">
+					Marketing
+				</label>
+
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<div class="form-col">
+					<label for="subject-id">Subject:</label>
+				</div>
+
+				<select id="subject-id">
+					<option>Declaring a Minor</option>
+					<option>Question</option>
+					<option>Other</option>
+				</select>
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<div class="form-col">
+					<label for="msg-id">Message:</label>
+				</div>
+				<textarea id="msg-id" placeholder="Hello..."></textarea>
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<button id="submit-btn" type="submit">Send</button>
+				<button type="reset">Clear</button>
+			</div> <!-- .form-row -->
+
+		</form>
+
+	</div> <!-- #main -->
+
+	<div id="footer">
+		University of Southern California &copy; 2018
+	</div> <!-- #footer -->
+
+</body>
+</html>

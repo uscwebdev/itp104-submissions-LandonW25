@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--photo gallery-->
+<html>
+    <head>
+        <title>
+            Lab 6 | Photo Gallery
+        </title>
+        <style>
+            #header{
+                text-align:center;
+                background-color:grey;
+            }
+            h2{
+                text-align:center;
+            }
+            #main{
+                width:1000px;
+                display:flex;
+            }
+            #main img{
+                width:186px;
+                margin:10px;
+                opacity:0.7;
+            }
+            #main img:hover{
+                opacity:1;
+            }
+            #main img + p{
+                visibility:hidden;
+            }
+            #main img:hover +p{
+                visibility:visible;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id = "header">
+            Simple Photo Gallery
+        </h1>
+        <h2>
+            My Favourite Activities
+        </h2>
+        <div id="main">
+            <div>
+                <img src="img/coding.jpg" alt="coding">
+                <p>Coding</p>
+            </div>
+            <div>
+                <img src="img/drumming.jpg" alt ="drumming">
+                <p>Drumming</p>
+            </div>
+            <div>
+                <img src="img/radio.jpg" alt="student radio">
+                <p>Student Radio</p>
+            </div>
+            <div>
+                <img src="img/metasploit.jpg" alt="hacking">
+                <p>Hacking</p>
+            </div>
+            <div>
+                <img src="img/skating.jpg" alt="skating">
+                <p>Skating</p>
+            </div>
+        </div>
+    </body>
+</html>
