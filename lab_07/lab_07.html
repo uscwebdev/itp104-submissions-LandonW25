@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab 07 | Album Cover Split
+        </title>
+        <style>
+            #header{
+                background-color:black;
+                background-size:cover;
+                background-position:center;
+                height:345px;
+            }
+            h1{
+                text-align:center;
+                line-height:330px;
+                color:white;
+            }
+            #all_images{
+                display:flex;
+                flex-wrap:wrap;
+                width:1000px;
+                margin:auto;
+                background-color:white;
+            }
+            #main{
+                background-color:grey;
+            }
+            #onetwo{
+                position:relative;
+                top:100px;
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            }
+            #twoone{
+                position:relative;
+                left:100px;
+                box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            }
+            #twothree{
+                position:relative;
+                right:100px;
+                box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            }
+            #threetwo{
+                position:relative;
+                bottom:100px;
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "header">
+            <h1>NiN Album Cover Split</h1>
+        </div>
+        <div id = "main">
+            <div id = "all_images">
+                <img src="img/tds_split/row-1-column-1.jpg" alt="row1colm1">
+                <img id="onetwo" src="img/tds_split/row-1-column-2.jpg" alt="row1colm2">
+                <img src="img/tds_split/row-1-column-3.jpg" alt="row1colm3">
+                <img id="twoone" src="img/tds_split/row-2-column-1.jpg" alt="row2colm1">
+                <img src="img/tds_split/row-2-column-2.jpg" alt="row2colm2">
+                <img id="twothree" src="img/tds_split/row-2-column-3.jpg" alt="row2colm3">
+                <img src="img/tds_split/row-3-column-1.jpg" alt="row3colm1">
+                <img id="threetwo" src="img/tds_split/row-3-column-2.jpg" alt="row3colm2">
+                <img src="img/tds_split/row-3-column-3.jpg" alt="row3colm3">
+            </div>
+        </div>
+    </body>
+</html>
