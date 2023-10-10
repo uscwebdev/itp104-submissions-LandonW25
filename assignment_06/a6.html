@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Assignment 6 | Landon White</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="fonts/ENDOR___.ttf">-->
+    <style>
+        @font-face{
+            src:url(fonts/ENDOR___.ttf);
+            font-family:"endor";
+        }
+        h1{
+            font-family:"endor", fantasy;
+        }
+        h2{
+            font-family: 'Dancing Script', cursive;
+        }
+        #drum{
+            float:left;
+            height:150px;
+            width:auto;
+            margin:5px;
+            padding:5px;
+        }
+        .set_width{
+             width:500px;
+        }
+        #kxsc{
+            float:right;
+        }
+        #hellfest{
+            float:left;
+            height:100px;
+        }
+        #footer{
+            text-align:center;
+            background-color:grey;
+            height:35px;
+            line-height:35px;
+        }
+        body{
+            background-color:black;
+        }
+        .right-image{
+            /*
+                total width = 900
+                border middle = 1
+                width of other column:700
+                width img/right clumn: 900-700-1=199
+                set img width smaller so I can add padding and some non-awkward text
+            */
+            width: 170px;
+            margin: 20px;
+        }
+        #right-column{
+            text-align:center;
+            color:ghostwhite;
+            border:1px solid black;
+        }
+        .hidetext{
+            visibility:hidden;
+        }
+        .right-image:hover + p{
+            visibility:visible;
+        }
+        #dropdown{
+            position:relative;
+        }
+        #sub_menu{
+            display:none;
+            position:absolute;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        #sub_menu a{
+            display:block;
+            background-color:white;
+            z-index:1;
+        }
+        #dropdown:hover #sub_menu{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Live Music</h1>
+    </div>
+    <div id="all_main">
+        <div id="main_content">
+            <div id="navbar">
+                <div id = "dropdown">
+                    <a href="a6.html">Home</a>
+                    <div id ="sub_menu">
+                        <a href="a6.html#passion">Passion</a>
+                        <a href="a6.html#experience">Experience</a>
+                        <a href="a6.html#future">Future</a>
+                    </div>
+                </div>
+                <a href="gallery.html">Gallery</a>
+            </div>
+           <div id="passion">
+            <h2>Passion</h2>
+            <img id="drum" src="img/drumset2.jpg" alt="drumset"/>
+            <p>My whole life, I have done music as a hobby in some form. Instruments, Production, Education, Composition; anything you
+               can think of, I have probably done. It started with tunes in the car and playing on a toy drumset and has evolved into
+               defining most of my to something relating to music. I genuinely cannot think of any other aspect of reality that has captivated
+               me with such a massive grasp for my whole life, let alone a single moment. I often say it is my favorite thing in life.
+            </p>
+            <p>(And even without activiely doing a music hobby, I am always listening to it. 
+                Shoutout to my >100k minutes on Spotify alone last year and around the same per year since I was allowed
+               access to Pandora in 2014).   
+            </p>
+           </div>
+           <div id="experience">
+               <h2>Experiences</h2>
+               <img id="kxsc" src="img/kxsc.png" alt="kxsc logo" />
+               <div>
+                   <p>
+                       Current: Tech Director for USC's Student Radio, KXSC. I fix any technological problem in the broadcast room
+                       and help plan live music events, eberything from decorations to artists to venues. I also get to have an hour
+                       long Radio DJ set, where I do themed sets around music I enjoy, with the occasional comment from myself.
+                   </p>
+                   <p>
+                       Past: Sound Engineer for Lone Star High School Marching Band, Worker for
+                       <a target="_blank" href="https://www.globalinheritance.org/">Global Inheritance</a>
+                       at Coachella 2023,
+                       Attendee at 30+ concerts and 7 festivals in the past 2 years alone, and avid percussionist/guitarist.
+                   </p>
+               </div>
+           </div>
+           <div id="future">
+            <h2>Future</h2>
+               <img id="hellfest" src="img/hellfest.jpg" alt="hellfest_arial"/>
+            <div>
+            <p>I hope to work for more festivals in the future, as it's so fun to meet people who are also in a shared space
+               for live music (especially when I don't have to pay for the ticket :D). I'm thinking Coachella 2024 and any other SoCal 
+                festival that is weekend based. Maybe even a metal festival too, like HellFest in France.
+            </p>
+            <p>I also hope to get a lot better at drumming. I was pretty good in high school but haven't touched it in the 2 1/2 years
+               since I graduated, so I definitely need to touch up.
+            </p>
+            </div><!--formatting div for paragraphs-->
+           </div><!--future-->
+        </div><!--main content-->
+        <div id="right-column">
+            <img class="right-image" src="img/marimba.png" alt="marimba" />
+            <p class="hidetext"><em>Marimba</em></p>
+            <img class="right-image" src="img/coachella2.jpg" alt="coachella" />
+            <p class="hidetext"><em>Coachella</em></p>
+            <img class="right-image" src="img/audioeng.jpg" alt="audio class" />
+            <p class="hidetext"><em>Audio Engineering Class</em></p>
+        </div>
+    </div><!-- all main-->
+    <div id="footer">
+        Landon White USC ITP 104
+    </div>
+</body>
+</html>

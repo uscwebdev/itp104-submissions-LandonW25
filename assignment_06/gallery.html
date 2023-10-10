@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Gallery
+    </title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @font-face{
+            src:url(fonts/);
+            font-family:"endor";
+        }
+        #header{
+            height:200px;
+            background-image:url("img/hardcore-show.jpg");
+        }
+        h1{
+            color:white;
+            font-size:3em;
+            text-align:center;
+            line-height:170px;
+            font-family:"endor", fantasy;
+        }
+        #main_content{
+            
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #all_main{
+            display:unset;
+        }
+        #main_content > p{
+            text-align:center;
+            font-size:2em;
+        }
+        #navbar{
+            background-color:black;
+        }
+        #navbar > a{
+            color:white;
+            border-bottom:2px solid black;
+        }
+        #navbar > a:hover{
+            background-color:grey;
+        }
+        #highlight_nav{
+            border-bottom-color:white;
+        }
+        #all_tiles{
+            /*
+                width of main content:700px
+                border 1px * 2, padding 2 px * 2 = 4 + 2 = 6
+                width = 700 - 6 = 694
+            */
+            display:flex;
+            flex-wrap:wrap;
+            width:689px;
+        }
+        #four_square{
+            width:344px;
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .img-container{
+            width:168px;
+            border:1px solid black;
+            background-color:grey;
+            height:120px;
+            margin:1px;
+            overflow:hidden;
+            position:relative;
+        }
+        #eight{
+            height:243px;
+            width:340px;
+            border:1px solid black;
+            background-color:grey;
+        }
+        #one{
+            width:340px;
+        }
+        #footer{
+            color:white;
+            background-color:black;
+        }
+        #nine{
+            width:340px;
+        }
+        #ten{
+            width:340px;
+        }
+        .overlay{
+            position:absolute;
+            top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+            background-color: rgba(0, 0, 0, 0.6);
+			color: #FFF;
+			text-align: center;
+			padding-top: 50px;
+			visibility: hidden;
+        }
+        .img-container:hover > .overlay{
+            visibility:visible;
+        }
+        .img-container > img{
+            height:120px;
+            width:auto;
+        }
+        .img-container > .width-100{
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <div id ="header">
+        <h1>Shows</h1> 
+    </div>
+    <div id = "all_main">
+        <div id="main_content">
+            <div id="navbar">
+                <a href="a6.html">Home</a>
+                <a id ="highlight_nav" href="gallery.html">Gallery</a>
+            </div>
+            <p><b>Shows That I've Been To</b></p>
+            <div id="all_tiles">
+                <div class="img-container" id="one">
+                    <img src="img/soulglo.jpg" alt="SoulGlo" class = "width-100">
+				    <div class="overlay">SoulGlo</div>
+                </div>
+                <div class="img-container">
+                    <img src="img/code_orange.jpg" alt="Code Orange">
+                    <div class="overlay">Code Orange</div>
+                </div>
+                <div class="img-container">
+                    <img src="img/xavier_wulf.jpg" alt="Xavier Wulf">
+                    <div class = "overlay">Xavier Wulf</div>
+                </div>
+                <div id ="four_square">
+                    <div class="img-container">
+                        <img src="img/baby_keem.jpg" alt="Baby Keem">
+                        <div class="overlay">Baby Keem</div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/men_i_trust.jpg" alt="Men I Trust">
+                        <div class="overlay">Men I Trust</div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/blue_man_group.jpg" alt="Blue Man Group">
+                        <div class="overlay">Blue Man Group</div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/jpegmafia.jpg" alt="Jpegmafia">
+                        <div class="overlay">Jpegmafia</div>
+                    </div>
+                </div>
+                <div id = "eight" class = "img-container">
+                    <img src="img/tame_impala.jpg" alt="Tame Impala" class="width-100">
+                    <div class="overlay">Tame Impala</div>
+                </div>
+                <div class="img-container" id ="nine">
+                    <img src="img/frank_ocean.jpg" class = "width-100" alt="Frank Ocean">
+                    <div class="overlay">Frank Ocean</div>
+                </div>
+                <div class="img-container" id="ten">
+                    <img src="img/city_morgue.jpg" class="width-100" alt="City Morgue">
+                    <div class="overlay">City Morgue</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "footer">USC</div>
+</body>
+</html>
