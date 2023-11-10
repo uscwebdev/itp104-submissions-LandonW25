@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #1{
+                display:flex;
+                width:800px;
+            }
+            #2{
+                background-color:yellow;
+            }
+            #3{
+                background-color:pink;
+            }
+            #wrapper{
+                width:400px;
+                display:flex;
+            }
+            #left{
+                width:200px;
+                background-color:blue;
+            }
+            #right{
+                width:200px;
+            }
+            #top{
+                background-color:yellow;
+            }
+            #bottom{
+                background-color:green;
+            }
+            #small{
+                visibility:hidden;
+            }
+            #big:hover > div{
+                visibility:visible;
+            }
+            #widgets{
+                height:200px;
+                position:fixed;
+                top:100px;
+                right:0px;
+                background-color:pink;
+            }
+        </style>
+        <title>
+            New File
+        </title>
+    </head>
+    <body>
+        <div id="widgets">
+            Hi
+        </div>
+        <div id = "1">
+            <div id = "2">
+                Hello World
+            </div>
+            <div id = "3">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+        <p>R</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <ul>
+                <li>3</li>
+                <li>4</li>
+                <ul>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+            </ul>
+        </ul>
+        <a href="../../index.html">home</a>
+        <div id = "wrapper">
+            <div id = "left">
+                Left
+            </div>
+            <div id = "right">
+                <div id="top">
+                    Right-Top
+                </div>
+                <div id = "bottom">
+                    Right-Bottom
+                </div>
+            </div>
+        </div>
+        <form action="submit.html">
+            <p>Proficiency in Web Development:</p>
+            <label>
+                <input type="radio" name="level">
+                Advanced
+            </label><br>
+            <label>
+                <input type="radio" name="level">
+                Moderate
+            </label><br>
+            <label>
+                <input type="radio" name="level">
+                Introductory
+            </label>
+        </form>
+        <div id = "big">
+            THIS IS BIG BOX
+            <div id = "small">
+                this is small box
+            </div>
+        </div>
+    </body>
+</html>
