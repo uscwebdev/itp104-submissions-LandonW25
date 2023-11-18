@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab 11 | Draggable
+        </title>
+        <style>
+            #header{
+                background-color:black;
+                background-size:cover;
+                background-position:center;
+                height:345px;
+            }
+            h1{
+                text-align:center;
+                line-height:330px;
+                color:white;
+            }
+            #all_images{
+                display:flex;
+                flex-wrap:wrap;
+                width:1000px;
+                margin:auto;
+                background-color:white;
+            }
+            #main{
+                background-color:grey;
+            }
+            #onetwo{
+                position:relative;
+                top:100px;
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            }
+            #twoone{
+                position:relative;
+                left:100px;
+                box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            }
+            #twothree{
+                position:relative;
+                right:100px;
+                box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            }
+            #threetwo{
+                position:relative;
+                bottom:100px;
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "header">
+            <h1>NiN Album Cover Split</h1>
+        </div>
+        <div id = "main">
+            <div id = "all_images">
+                <img src="img/tds_split/row-1-column-1.jpg" alt="row1colm1" class="draggable">
+                <img id="onetwo" src="img/tds_split/row-1-column-2.jpg" alt="row1colm2" class="draggable">
+                <img src="img/tds_split/row-1-column-3.jpg" alt="row1colm3" class="draggable">
+                <img id="twoone" src="img/tds_split/row-2-column-1.jpg" alt="row2colm1" class="draggable">
+                <img src="img/tds_split/row-2-column-2.jpg" alt="row2colm2" class="draggable">
+                <img id="twothree" src="img/tds_split/row-2-column-3.jpg" alt="row2colm3" class="draggable">
+                <img src="img/tds_split/row-3-column-1.jpg" alt="row3colm1" class="draggable">
+                <img id="threetwo" src="img/tds_split/row-3-column-2.jpg" alt="row3colm2" class="draggable">
+                <img src="img/tds_split/row-3-column-3.jpg" alt="row3colm3" class="draggable">
+            </div>
+        </div>
+        <script src="DRAGGABLE/draggabilly.pkgd.min.js"></script>
+        <script>
+            var elem = document.querySelector('.draggable');
+            var draggie = new Draggabilly( elem, {
+                // options...
+            });
+
+            // or pass in selector string as first argument
+            var draggie = new Draggabilly( '.draggable', {
+                // options...
+            });
+
+            // if you have multiple .draggable elements
+            // get all draggie elements
+            var draggableElems = document.querySelectorAll('.draggable');
+            // array of Draggabillies
+            var draggies = []
+            // init Draggabillies
+            for ( var i=0; i < draggableElems.length; i++ ) {
+                var draggableElem = draggableElems[i];
+                var draggie = new Draggabilly( draggableElem, {
+                    // options...
+                });
+                draggies.push( draggie );
+            }
+        </script>
+    </body>
+</html>
