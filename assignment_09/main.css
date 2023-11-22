@@ -1,0 +1,8 @@
+.block{
+    color:black;
+    width:630px;
+    border:2px solid black;
+    height:329px;
+    border-collapse:collapse;
+    overflow:hidden;
+}
