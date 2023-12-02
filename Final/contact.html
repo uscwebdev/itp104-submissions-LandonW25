@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="decription" content="Contact page for my portfolio, including social media links 
+        and a form to submit an email">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .block{
+                height:320px;
+                width:670px;
+                font-size:1em;
+            }
+            #form{
+                height:644px;
+                width:580px;
+                border:2px solid black;
+                border-collapse:collapse;
+                overflow:hidden;
+            }
+            img{
+                width:100%;
+                height:100%;
+            }
+            .center{
+                line-height:65px;
+            }
+            form{
+                font-size:1.5em;
+            }
+            #message{
+                height:300px;
+            }
+        </style>
+        <title>
+            Final Project Education Page
+        </title>
+    </head>
+    <body>
+        <div id="body">
+            <div id="text-column">
+                <div id="Overview" class="block">
+                    <div class ="center">Social Media:</div>
+                    <div class="center"><a href="https://www.linkedin.com/in/landon-white-73566a235/" target="_blank">Linkedin</a></div>
+                    <div class="center"><a href="https://www.instagram.com/usccyborg/?hl=en" target="_blank">USC Cyborg</a></div>
+                    <div class="center"><a href="https://www.instagram.com/uscviterbi/" target="_blank">USC Viterbi</a></div>
+                    <div class="center"><a href="https://www.instagram.com/usc_itp/" target="_blank">USC ITP</a></div>
+                </div>
+                <div id="home" class="block">
+                    <a href="home.html">Home</a>
+                </div>
+            </div>
+            <div id="form">
+                <form action="confirmation.html">
+                    <div class="center">For questions email ljwhite@usc.edu</div>
+                    <div class="form-row">
+                        <div class = "form-col">
+                            <label for="name-id">Name: </label>
+                        </div>
+                        <input id="name-id" type="text" placeholder="First Last">
+                    </div><!--end of form row-->
+                    <p></p>
+                    <div class="form-row">
+                        <div class = "form-col">
+                            <label for="email-id">Email: </label>
+                        </div>
+                        <input id="email-id" type="text" placeholder="person@domain.extension">
+                    </div><!--end of form row-->
+                    <p></p>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="message">Inquiry:</label>
+                        </div>
+                        <textarea id="message" placeholder="type here"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button id="submit" type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

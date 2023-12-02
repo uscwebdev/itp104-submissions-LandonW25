@@ -1,0 +1,123 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="description" content="This is my personal portfolio, for all things Landon White.
+            Learn about my various experiences in the technology industry between Radio Broadcast Technology,
+            Offensive Cybersecurity and Malware Analysis, Software Engineering, Web Development, and more. 
+            Also gain insight into my wonderful education at USC and all of the things I love to do on the
+            side that make me who I am.">
+            <style>
+                html{
+                    font-style:italic;
+                }
+                #body{
+                    height:658px;
+                    width:1272px;   
+                }
+                #square-wrapper{
+                    display:flex;
+                    flex-wrap: wrap;
+                }
+                .block{
+                    color:black;
+                    text-align:center;
+                    justify-content:center;
+                    width:630px;
+                    border:2px solid black;
+                    height:329px;
+                    border-collapse:collapse;
+                    line-height:300px;
+                    font-size:4em;
+                    overflow:hidden;
+                }
+                #name{
+                    position:absolute;
+                    top:290px;
+                    height:100px;
+                    width:150px;
+                    left:568px;
+                    background-color:white;
+                    border:2px solid black;
+                    line-height:90px;
+                    text-align:center;
+                    font-size:1.5em;
+                    z-index:1;
+                    font-style:normal;  
+                }
+                .overlay{
+                    position:absolute;
+                    top:0px;
+                    left:0px;
+                    right:0px;
+                    bottom:0px;
+                }
+                #projects{
+                    position:relative;
+                }
+                .block img{
+                    display:block;
+                    width:100%;
+                    transition:all 1s ease 0s;
+                    opacity:1;
+                    height:auto;
+                }
+                .block:hover img{
+                    transition:all 0s ease 0s;
+                    opacity:0.5;
+                }
+                #education{
+                    position:relative;
+                }
+                #contact{
+                    position:relative;
+                }
+                #passions{
+                    position:relative;
+                }
+                #home{
+                    position:relative;
+                }
+                #education img{
+                    height:auto;
+                    width:100%; 
+                    margin-top:50px;
+                }
+            </style>
+            <title>
+                Final Project Homepage + Secong Page
+            </title>
+        </head>
+        <body>
+            <div id="body">
+                <div id="square-wrapper">
+                    <div id="projects" class="block">
+                        <div class="container">
+                            <img src="img/cyber.jpg" alt="cybersec">
+                            <a class = "overlay" href="projects.html" target="_blank">Projects</a>
+                        </div>
+                    </div>
+                    <div id="education" class="block">
+                        <div class="container">
+                            <img src="img/usc.png" alt="usc">
+                            <a href="education.html" class = "overlay">Education</a>
+                        </div>
+                    </div>
+                    <div id = "name">
+                        Landon White
+                    </div>
+                    <div id="home" class="block">
+                        <div class="container">
+                            <img src="img/white.png" alt="contact">   
+                            <a href="" class="overlay">Home</a>
+                        </div>
+                    </div>
+                    <div id="contact" class="block">
+                        <div id="container">
+                            <img src="img/contact2.jpg" alt="contact">
+                            <a href="contact.html" class = "overlay">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>

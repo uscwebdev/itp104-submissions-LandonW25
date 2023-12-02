@@ -1,0 +1,34 @@
+.block{
+    color:black;
+    width:630px;
+    border:2px solid black;
+    height:329px;
+    border-collapse:collapse;
+    overflow:hidden;
+}
+#home{
+    font-size:4em;
+    font-style:italic;
+    text-align:center;
+    line-height:300px;
+}
+#overview{
+    font-size:1em;
+    text-align:left;
+    line-height:0px;
+}
+#text-column{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+.center{
+    text-align:center;
+    font-weight:bold;
+}
+#body{
+    width:1270px;
+    display:flex;
+    flex-wrap:wrap;
+    height:auto;
+}
